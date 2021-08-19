@@ -1,0 +1,100 @@
+.board {
+   max-width: 600px;
+   width: 100%;
+   height: 600px;
+   display: flex;
+   flex-wrap: wrap;
+   flex: 0 0 auto;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+
+.line__left,
+.line__right {
+   width: 10px;
+   height: 620px;
+   background-color: #ab51c3;
+   position: absolute;
+   top: -10px;
+   left: 200px;
+   border-radius: 5px;
+}
+
+.line__right {
+   left: auto;
+   right: 200px;
+}
+
+.horizontal-line__top,
+.horizontal-line__bot {
+   width: 620px;
+   height: 10px;
+   background-color: #ab51c3;
+   position: absolute;
+   top: 200px;
+left: -10px;
+   border-radius: 5px;
+}
+
+.horizontal-line__bot {
+   bottom: 200px;
+   top: auto;
+}
+
+.redline {
+   height: 10px;
+   width: 520px;
+   background-color: rgb(160, 50, 50);
+	border-radius: 5px;
+   position: absolute;
+	left: 50px;
+   z-index: 99999;
+   visibility: hidden;
+}
+
+.first__line {
+   visibility: visible;
+   top: 95px;
+}
+
+.second__line {
+   visibility: visible;
+   top: 50%;
+   transform: translate(0, -50%);
+}
+
+.third__line {
+   visibility: visible;
+   top: auto;
+   bottom: 95px;
+}
+
+.fourth__line {
+   transform: rotate(90deg);
+   visibility: visible;
+   left: -155px;
+}
+.fifth__line{
+	visibility: visible;
+	transform: rotate(90deg);
+	left: 45px;
+}
+.sixth__line{
+	visibility: visible;
+	transform: rotate(90deg);
+	left: 245px;
+}
+.seventh__line{
+	visibility: visible;
+	transform: rotate(45deg);
+	width: 770px;
+	left: -81px;
+}
+
+.eighth__line{
+	visibility: visible;
+	transform: rotate(-45deg);
+	width: 770px;
+	left: -81px;
+}

@@ -1,0 +1,58 @@
+.square {
+   width: 200px;
+   height: 200px;
+   background-color: #45425f;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 50px;
+   color: #fff;
+   cursor: pointer;
+   border: none;
+   outline: transparent;
+}
+
+.square:hover {
+   background-color: #4c4a64;
+   transition: all linear .3s;
+}
+
+.square:nth-child(1) {
+   border-radius: 5px 0 0 0;
+}
+
+.square:nth-child(5) {
+   border-radius: 0 5px 0 0;
+}
+
+.square:nth-child(11) {
+   border-radius: 0 0 0 5px;
+}
+
+.square:nth-child(13) {
+   border-radius: 0 0 5px 0;
+}
+
+.cross,
+.zero{
+	background-color: transparent;
+	height: 150px;
+	width: 150px;
+	position: relative;
+}
+.cross::before, 
+.cross::after{
+	content: '';
+	height: 150px;
+	width: 10px;
+	background-color: rgb(146, 147, 160);
+	position: absolute;
+	transform: rotate(45deg);
+}
+.cross::after{
+	transform: rotate(-45deg);
+}
+.zero{
+	border: 10px solid rgb(146, 147, 160);
+	border-radius: 50%;
+}

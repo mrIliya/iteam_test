@@ -1,0 +1,41 @@
+.modal{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	-webkit-backdrop-filter: blur(2px);
+   backdrop-filter: blur(2px);
+	z-index: 9999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.modal__window{
+	max-width: 300px;
+	width: 100%;
+}
+.modal__input{
+	display: block;
+	margin-bottom: 30px;
+	height: 50px;
+	width: 100%;
+	padding: 10px;
+	border: transparent;
+	border-radius: 3px;
+	font-size: 18px;
+}
+.modal__btn{
+	max-width: 100px;
+	width: 100%;
+	height: 50px;
+	display: block;
+	margin: 0 auto;
+	font-size: 17px;
+	cursor: pointer;
+	outline: transparent;
+	border-radius: 5px;
+	border-color: #fff;
+}
+.modal__btn:hover{
+	background-color: rgb(196, 194, 194);
+	transition: all linear .3s;
+}

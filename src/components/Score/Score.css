@@ -1,0 +1,17 @@
+.score{
+	max-width: 500px;
+	width: 100%;
+	padding: 30px;
+}
+.score__list{
+	padding: 0;
+	margin: 0;
+}
+.score__line+li{
+margin-top: 30px;
+}
+.score__line{
+	list-style: none;
+	font-size: 30px;
+	color: #fff;
+}
